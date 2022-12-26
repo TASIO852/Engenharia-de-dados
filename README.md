@@ -70,3 +70,7 @@ graph TD;
     B-->D;
     C-->D;
 ```
+
+- Arquitetura de dados e momentanea sempre muda conforme passa o tempo
+- gestao de meta dados e questao de lgpd oque pode e nao pode fazer com os dados
+- Orquestração e um gerenciamento de pipeline (airflow,docker,microserviços quando e muito grande)
