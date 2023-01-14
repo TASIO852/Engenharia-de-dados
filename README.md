@@ -2,17 +2,32 @@
 
 ## Pipeline de dados
 
+### Definição
+
+![Alt text](images/Pipeline%20de%20dados.png)
+
+> Pipeline moderna de dados
+
+- Processamento de dados contínuo e extensível.
+- A elasticidade e agilidade da nuvem.
+- Recursos isolados e independentes para processamento de dados.
+- Acesso democratizado a dados e gerenciamento de autoatendimento.
+- Alta disponibilidade e recuperação de desastres
+
 - Pipeline de dados e automação , agregação dos dados e movimentação dos mesmos
 - Carrega dados brutos e transforma eles (ETL & ELT)
+
+### Tecnologias e Conceitos Principais
+
 - Existe diversas ferramentas de pipeline de dados (kinine ,pentaho ,camuda ,aws glue)
-- Estudar terraform docker jenkins
+- terraform
+- docker
+- jenkins
 - Microserviços
 - cybersegurança
 - Infraestrutura
 - ci/cd
 - dataops,mlops
-
-Ideia : fazer linguagem de programaçao para lidar com configuraçoes de cybersegurança (tipo terraform)
 
 > De onde vem os dados
 > Fazer etapas em paralelo de tiverem um individualismo entre si
@@ -31,46 +46,46 @@ Ideia : fazer linguagem de programaçao para lidar com configuraçoes de cyberse
     - data store
     - stream
 
-### Definição
+### Ciclo de vida da engenhariade dados
 
-![Alt text](images/Pipeline%20de%20dados.png)
+![Alt text](Images/Ciclo%20de%20vida.png)
 
-> Pipeline moderna de dados
-
-- Processamento de dados contínuo e extensível.
-- A elasticidade e agilidade da nuvem.
-- Recursos isolados e independentes para processamento de dados.
-- Acesso democratizado a dados e gerenciamento de autoatendimento.
-- Alta disponibilidade e recuperação de desastres
-
-### Principais ferramentas da area de engenharia de dados
-
-Real time
-armazenamento cloud
-transformaçao
-
-### ciclo de vida da engenhariade dados
-
-- Fonte de dado
+- Fonte de dados
   - conectores especificos para cada fonte de dados
 - Ingestao de dados
   - em um db separado
 - Transformaçao e enriquecimento
+  - tratamento com pandas
+  - Ultilização do spark
 - Carga e uso dos dados
+  - sistema intermediario de armazenamento (postgres ou mongo)
+  - Formação de data marts
+- Armazenamento
+  - Armazenamento intermediario para cada etapa acima
+  - Cache
+  - Memoria
+  - Disco
+- Analytics, Machine Learning, IA, Relatórios e Dashboards
+  - relatorios
+  - previsao de metas
   - dashboard
   - produto
-- Armazenamento
-  - data store
-  - sistema intermediario de armazenamento
 
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
+> OBS:
 
 - Arquitetura de dados e momentanea sempre muda conforme passa o tempo
 - gestao de meta dados e questao de lgpd oque pode e nao pode fazer com os dados
 - Orquestração e um gerenciamento de pipeline (airflow,docker,microserviços quando e muito grande)
+
+### Processos por tras de tudo
+
+- Arquitetura de dados
+- Gestao de metados
+- Orquestração
+- Segurança
+- CI/CD
+- Dataops
+
+## Arquitetura de Pipeline de dados
+
+## Armazenamento distribuido
