@@ -48,7 +48,7 @@
 
 ### Ciclo de vida da engenhariade dados
 
-![Alt text](Images/Ciclo%20de%20vida.png)
+![Alt text](images/Ciclo%20de%20vida.png)
 
 - Fonte de dados
   - conectores especificos para cada fonte de dados
