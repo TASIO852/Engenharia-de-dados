@@ -35,7 +35,6 @@ Basta seguir a documentação recomendada que é possível produzir um resultado
   - Memória RAM : Pelo menos metade da capacidade do seu PC
   - OS: Ubunto server
 
-
 # **Quais são suas dependências ?**
 
 - O sistema do Docker é dividido basicamente em quatro partes: Docker Server e Daemon, imagens, registros, e Contêiners.
@@ -55,8 +54,6 @@ O Docker possui alguns componentes.
 - **Contêiner**: Serve para armazenar as informações de maneira clusterização, ou seja, inserir as informações em um espaço específico no qual é possível manter configurações específicas para determinados tipos de imagem.
 - **Imagem**: É um item que contém todas as informações de determinadas aplicações.
 - **Camada**: Trata-se de uma configuração específica que pode efetuar a operação de Leitura ou Escrita, no caso do Docker, essa camada permite a criação de diversas configurações sem alterar a imagem original.
-
-
 
 `Docker compose cria o Contêiner e Dockerfile cria a imagem`
 
@@ -111,3 +108,48 @@ Volumes nada mais são que diretórios externos ao Contêiner, que são montados
 ## **TAG**
 
 Tag, é uma abstração para criar unidade dentro do conjunto de imagens definidas no “repositório”. Um “repositório” pode conter mais de uma “tag” e cada conjunto repositório:tag representa uma imagem diferente
+
+# Docker Getting Started Tutorial
+
+This tutorial was written with the intent of helping folks get up and running
+with containers and is designed to work with Docker Desktop. While not going too much
+into depth, it covers the following topics:
+
+- Running your first container
+- Building containers
+- Learning what containers are
+- Running and removing containers
+- Using volumes to persist data
+- Using bind mounts to support development
+- Using container networking to support multi-container applications
+- Using Docker Compose to simplify the definition and sharing of applications
+- Using image layer caching to speed up builds and reduce push/pull size
+- Using multi-stage builds to separate build-time and runtime dependencies
+
+## Getting Started
+
+If you wish to run the tutorial, you can use the following command after installing Docker Desktop:
+
+```bash
+docker run -d -p 80:80 docker/getting-started
+```
+
+Once it has started, you can open your browser to [http://localhost](http://localhost).
+
+## Development
+
+This project has a `docker-compose.yml` file, which will start the mkdocs application on your
+local machine and help you see changes instantly.
+
+```bash
+docker compose up
+```
+
+## Contributing
+
+If you find typos or other issues with the tutorial, feel free to create a PR and suggest fixes!
+
+If you have ideas on how to make the tutorial better or want to suggest adding new content, please open an
+issue first before working on your idea. While we love input, we want to keep the tutorial scoped to new-comers.
+As such, we may reject ideas for more advanced requests and don't want you to lose any work you might
+have done. So, ask first and we'll gladly hear your thoughts!
