@@ -1,0 +1,12 @@
+BOT_NAME = 'spid'
+
+SPIDER_MODULES = ['spid.spiders']
+NEWSPIDER_MODULE = 'spid.spiders'
+
+USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36'
+FEED_EXPORT_ENCODING = 'UTF-8'
+
+ROBOTSTXT_OBEY = True
+
+DOWNLOAD_DELAY = 3
+RANDOMIZE_DOWNLOAD_DELAY = False
