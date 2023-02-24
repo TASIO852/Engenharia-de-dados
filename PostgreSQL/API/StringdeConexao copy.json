@@ -1,0 +1,21 @@
+{
+  "connector.class": "PostgresSink",
+  "name": "PostgresSinkConnector_0",
+  "input.data.format": "AVRO",
+  "kafka.auth.mode": "KAFKA_API_KEY",
+  "kafka.api.key": "****************",
+  "kafka.api.secret": "****************************************************************",
+  "connection.host": "database-4.<host-id>.us-east-2.rds.amazonaws.com",
+  "connection.port": "5432",
+  "connection.user": "postgres",
+  "connection.password": "**************",
+  "db.name": "postgres",
+  "topics": "postgresql_ratings",
+  "insert.mode": "UPSERT",
+  "db.timezone": "UTC",
+  "auto.create": "true",
+  "auto.evolve": "true",
+  "pk.mode": "record_value",
+  "pk.fields": "user_id",
+  "tasks.max": "1"
+}
