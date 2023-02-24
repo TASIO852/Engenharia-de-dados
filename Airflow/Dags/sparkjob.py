@@ -8,8 +8,8 @@ spark = SparkSession \
     .appName("Extração Documentos a Pagar") \
     .config("spark.jars.packages",
             "org.mongodb.spark:mongo-spark-connector_2.12:3.0.0,com.microsoft.sqlserver:mssql-jdbc:8.4.1.jre8") \
-    .config("spark.mongodb.input.uri", "mongodb://127.0.0.1:27017/Financeiro") \
-    .config("spark.mongodb.output.uri", "mongodb://127.0.0.1:27017/Financeiro") \
+    .config("spark.mongodb.input.uri", "mongodb://127.0.0.1:27017/Basedata") \
+    .config("spark.mongodb.output.uri", "mongodb://127.0.0.1:27017/Basedata") \
     .config("spark.driver.maxResultSize", "8g") \
     .config("spark.network.timeout", 10000000) \
     .config("spark.executor.heartbeatInterval", 10000000) \
@@ -38,7 +38,7 @@ group = jdbcDF.select("CodigoTipoDocumento", "Vencimento", "Saldo") \
     .groupby(["CodigoTipoDocumento", "Vencimento"]).agg(functions.sum("Saldo").alias("Saldo"))
 group.write.format("com.mongodb.spark.sql.DefaultSource") \
     .mode("overwrite") \
-    .option("database", "Financeiro") \
+    .option("database", "Basedata") \
     .option("collection", "Fact_DocumentoPagar") \
     .save()
 termino = datetime.now()
@@ -72,7 +72,7 @@ group = df.select("CodigoTipoDocumento", "Vencimento", "Saldo") \
 # salvar dados no mongo
 group.write.format("com.mongodb.spark.sql.DefaultSource") \
     .mode("overwrite") \
-    .option("database", "Financeiro") \
+    .option("database", "Basedata") \
     .option("collection", "Fact_DocumentoPagar") \
     .save()
 termino = datetime.now()

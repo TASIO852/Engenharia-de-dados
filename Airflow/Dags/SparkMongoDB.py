@@ -19,8 +19,8 @@ with airflow.DAG('dag_teste_spark_documento_vencido_v3', default_args=default_ar
         total_executor_cores=3,
         executor_memory="30g",
         conf={
-            "spark.mongodb.input.uri": "mongodb://127.0.0.1:27017/Financeiro",
-            "spark.mongodb.output.uri": "mongodb://127.0.0.1:27017/Financeiro",
+            "spark.mongodb.input.uri": "mongodb://127.0.0.1:27017/Basedata",
+            "spark.mongodb.output.uri": "mongodb://127.0.0.1:27017/Basedata",
             "spark.network.timeout": 10000000,
             "spark.executor.heartbeatInterval": 10000000,
             "spark.storage.blockManagerSlaveTimeoutMs": 10000000,
