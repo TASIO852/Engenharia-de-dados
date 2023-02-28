@@ -119,3 +119,5 @@ Antes de fazer uma arquitetura de dados e importante ter em mente conceitos bem 
 - Custo do projeto
 
 Tendo esse conceitos em mente fica muito mais facil definir todo entorno do projeto
+
+
