@@ -26,7 +26,7 @@ Em sua estrutura, o Kafka possui consumers e producers. Para definir esses termo
 
 # **Qual é a Arquitetura ?**
 
-![Arquitetura](Images/Arquitetura.png)
+![Arquitetura](../Images/Kafka//Arquitetura.png)
 
 A arquitetura do Apache Kafka é organizada em torno de alguns termos chaves, são eles: messages, topics, producers, consumers groups e os brokers. O Apache Kafka é uma plataforma de stream (fluxo de dados) de alto throughput que desacopla os produtores de dados dos consumidores de dados
 
@@ -44,7 +44,7 @@ Zookeeper e Kafka trabalha de forma separada se comunicando entre si.
 
 O **_Kafka Connect_** pode criar um cluster de trabalhadores para tornar o processo de cópia de dados escalável e tolerante à falhas. Os trabalhadores precisam armazenar algumas informações sobre seu status, seu progresso na leitura de dados do armazenamento externo e assim por diante. Para armazenar esses dados, eles usam o Kafka como armazenamento.
 
-![Connections](Images/Kafka%20conect.jpg)
+![Connections](../Images/Kafka//Kafka%20conect.jpg)
 
 [Video Auxiliar](https://www.youtube.com/watch?v=h44GZk2gkCI)
 
@@ -82,7 +82,7 @@ O Apache Kafka é incorporado a pipelines de transmissão que compartilham dados
 
 Um tópico é como categorizamos grupos de mensagens dentro do Kafka. Todas as mensagens enviadas para o Kafka permanecem em um tópico. Como comentado sobre Event Sourcing, mensagens são imutáveis e ordenadas. Para manter a ordenação em um ecossistema de Kafka, os tópicos possuem partições e fatores de replicação.
 
-![Topics](Images/topico.png)
+![Topics](../Images/Kafka//topico.png)
 
 - [Explicação detalhada](https://vepo.github.io/posts/anatomia-de-um-topico)
 
@@ -106,7 +106,7 @@ O conceito de broker na plataforma do Kafka é nada mais do que praticamente o p
 
 Um cluster Kafka é um sistema que consiste em vários Brokers, Topics e Partitions para ambos. O objetivo principal é distribuir cargas de trabalho igualmente entre réplicas e partições.
 
-![](../../Images/Kafka/Multi-cluster-.gif)
+![](../../../Images/Kafka//Kafka/Multi-cluster-.gif)
 
 ## **Log file**
 
@@ -114,7 +114,7 @@ Um cluster Kafka é um sistema que consiste em vários Brokers, Topics e Partiti
 
 - O login no Apache Kafka traz muitos benefícios, não apenas fornece uma solução padrão do setor para anexar logs de dados, mas também fornece uma solução altamente escalável para armazenar logs de dados. Os logs do Apache Kafka fornecem suporte de integração robusto para vários aplicativos pré-existentes, permitindo que os usuários integrem seus aplicativos usando um passo de configuração fácil de seguir.
 
-![](../../Images/Kafka/logk.webp)
+![](../../../Images/Kafka//Kafka/logk.webp)
 
 ## **Particionamento**
 
@@ -122,7 +122,7 @@ Um cluster Kafka é um sistema que consiste em vários Brokers, Topics e Partiti
 
 - Toda partição de um tópico no Kafka pode ser consumida por um ou mais consumidores, desde que estes estejam em grupos de consumidores separados. Devido ao fato do Kafka ser um sistema distribuído, esses grupos de consumidores podem estar em brokers diferentes geograficamente distribuídos
 
-![](../../Images/Kafka/particoes-kafka.png)
+![](../../../Images/Kafka//Kafka/particoes-kafka.png)
 
 [kafka com python](https://timber.io/blog/hello-world-in-kafka-using-python/)
 
@@ -138,7 +138,7 @@ Replicação significa simplesmente manter cópias dos dados no cluster para pro
 
 Os segmentos ficam dentro das partições e segmentam as informações contidas nos logs files daquela partição, todo tópico possui sua partição e sua segmentação, a segmentação serve para gerenciar a ordenação da informação do log file bem como o tempo que ela ira ficar persistida.
 
-![Segmento](Images/segmento.png)
+![Segmento](../Images/Kafka//segmento.png)
 
 # **Como usar ?**
 

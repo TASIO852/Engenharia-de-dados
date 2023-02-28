@@ -1,8 +1,8 @@
-# Engenharia de dados
+# Engenharia de dados 🤖⚙️
+
+Esse repositório contém estudos e projetos desenvolvidos durante cursos e bootcamps.
 
 ## Pipeline de dados
-
-### Definição
 
 ![Alt text](images/Pipeline%20de%20dados.png)
 
@@ -17,36 +17,56 @@
 - Pipeline de dados e automação , agregação dos dados e movimentação dos mesmos
 - Carrega dados brutos e transforma eles (ETL & ELT)
 
-### Tecnologias e Conceitos Principais
+> Pipeline ETL
 
-- Existe diversas ferramentas de pipeline de dados (kinine ,pentaho ,camuda ,aws glue)
-- terraform
-- docker
-- jenkins
+- Um pipeline etl pode ser feita de diversas maneiras diferentes depende do seu caso de uso
+- Podem ser feitas em batch ou em streaming
+- Um dos fatores mais importante de decisao de como fazer esse pipeline sao :
+  - Volume de dados
+  - tipo de dados
+  - Local de armazenamento dos dados
+
+> Pipeline Machine learn
+
+- Um pipeline de Machine learn dependen exclusivamente dos pipelines de:
+  - Extração
+  - Transformação
+- O pipeline de ML e um produto final de toda a engenharia de dados
+
+> Pipeline CI/CD
+
+- Esse pipeline e voltado para versionamento de codigo
+
+## Principais Tecnologias e Conceitos
+
+> Conceitos
+
+- ci/cd
+- dataops
+- mlops
 - Microserviços
 - cybersegurança
 - Infraestrutura
-- ci/cd
-- dataops,mlops
 
-> De onde vem os dados
-> Fazer etapas em paralelo de tiverem um individualismo entre si
+> Tecnologias
 
-- componentes de um pipeline de dados
-  - origem
-    - nao extrair direto do banco da aplicaçao (banco segundario triggres)
-    - origem e bom sempre ser do mesmo tipo (compatibilidade)
-  - Processamento
-    - stream
-    - batch
-    - Depende do que vc quer fazer
-  - Destino
-    - data lake
-    - dw
-    - data store
-    - stream
+- terraform
+- docker
+- Delta Lake
+- Python
+- Apache spark
+- Databricks
+- Apache Beam
+- Apache Airflow
+- Apache Kafka
 
-### Ciclo de vida da engenhariade dados
+[Mais informações](Data\Src\17-BibliografiaCap02.pdf)
+
+OBS : Existe diversas ferramentas de pipeline de dados open-sourse e de facil acesso e aprendizado que poden ser usadas para pequenos trabalhos
+
+EX: kinine ,pentaho ,camuda
+
+## Ciclo de vida da engenhariade dados
 
 ![Alt text](images/Ciclo%20de%20vida.png)
 
@@ -77,7 +97,7 @@
 - gestao de meta dados e questao de lgpd oque pode e nao pode fazer com os dados
 - Orquestração e um gerenciamento de pipeline (airflow,docker,microserviços quando e muito grande)
 
-### Processos por tras de tudo
+> Processos por tras de tudo
 
 - Arquitetura de dados
 - Gestao de metados
@@ -86,52 +106,16 @@
 - CI/CD
 - Dataops
 
-## Arquitetura de Pipeline de dados
+## Arquitetura de dados
 
-## Armazenamento distribuido
+Antes de fazer uma arquitetura de dados e importante ter em mente conceitos bem definidos como :
 
-### Esse repositório contém estudos e projetos desenvolvidos durante cursos e bootcamps.
+- Visao geral do projeto
+- Compreensão dos requisitos de negocio
+- Qual tipo de pipeline se encaixa no processo (Batch ou Streamin)
+- Volume de dados
+- Como vai ser a extração e processamento dos dados
+- Processo de CI/CD e IAC
+- Custo do projeto
 
----
-
-### [Digital Innovation One](https://web.digitalinnovation.one/track/cognizant-cloud-data-engineer?tab=path)
-
-<u> Módulos: </u>
-
-- **Fundamentos de Arquitetura de Sistemas**
-- **Orquestração de contêiners com Docker**
-- **Melhores práticas com Banco de Dados PostgreSQL**
-- **Introdução ao MongoDB e Banco de Dados NoSQL**
-- **Explorando o poder do NoSQL com Cassandra e HBase**
-- **Fundamentos de ETL com Python**
-- **Monitoramento de clusters Haddop de alto nível com HDFS e YARN**
-- **Orquestrando ambientes de Big Data distribuídos com Zookeeper, Yarn e Sqoop**
-- **Realizando consultas de maneira simples no ambiente complexo de Big Data com Hive e Impala**
-- **Introdução a Engenharia de Dados na AWS**
-- **Introdução a Engenharia de Dados na Azure**
-- **Criando um Ecossistema Haddop totalmente Gerenciado com Google Cloud Dataproc**
-- **Introdução à Mensageria na Nuvem com Kafka e Python**
-- **Processando grandes conjuntos de dados de forma paralela e distribuída com Spark**
-- **Criando Pipelines de Dados eficientes com Spark e Python**
-
----
-
-### [How Bootcamp](https://learn.howedu.com.br/curso/engenharia-de-dados-cohort)
-
-_Instrutores: André Sionek e Rhuan Lima_
-
-<u> Módulos: </u>
-
-- **Fundamentos de Ingestão de Dados**
-- **SQL**
-- **Capturando dados de uma API**
-- **Capturando dados com crawlers**
-- **Testes + Jenkins**
-- **Introdução à AWS**
-- **Integração contínua**
-- **Data Lakes**
-- **AWS Glue + Athena**
-- **Redshift + Spectrum**
-- **Apache Airflow**
-- **Terraform e Cloudformation**
-- **Conteúdos extras (Lambda, mensageria, spark)**
+Tendo esse conceitos em mente fica muito mais facil definir todo entorno do projeto

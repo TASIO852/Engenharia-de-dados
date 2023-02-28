@@ -24,7 +24,7 @@ O MongoDB é um banco de dados orientado a documentos que possui código aberto 
 
 Basicamente temos a aplicação no servidor interagindo diretamente com os clientes, e quando a aplicação precisa de alguma informação ou precisa guardar alguma informação ela se comunica com o mongoDB que fica em um estado de listening para requests em andamento e ela responde apropriadamente quando esses requests estão completos.
 
-![Arquitetura](Images/Arquitetura%20bi.png)
+![Arquitetura](../Images/MongoDB//Arquitetura%20bi.png)
 
 [Alternativas de uso](https://imasters.com.br/mongodb/mongodb-e-business-inteligence)
 
@@ -43,7 +43,7 @@ Basicamente temos a aplicação no servidor interagindo diretamente com os clien
 
 # **Como funciona dentro do container ?**
 
-![infraestrutura](Images/Docker_infra.png)
+![infraestrutura](../Images/MongoDB//Docker_infra.png)
 
 [Container mongo](https://hub.docker.com/_/mongo)
 

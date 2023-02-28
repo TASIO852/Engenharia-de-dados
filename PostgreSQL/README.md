@@ -24,7 +24,7 @@ Ele consiste em um processo de servidor que lê e grava os arquivos de banco de 
 
 # **Qual e a Arquitetura ?**
 
-![arquitetura](Images/Postgres%20docker.png)
+![arquitetura](../Images/PostgresSQL//Postgres%20docker.png)
 
 # **Como instalar ?**
 

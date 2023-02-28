@@ -30,7 +30,7 @@ Outra vantagem é que algoritmos iterativos de machine learning são facilmente 
 
 A Arquitetura principal da ferramenta e essa que podemos ver abaixo e existe mais 3 versoes que se adapta em cada caso para uma finalidade a local, client e cluster cada uma para fazer uma coisa.
 
-![Arquitetura Princiapal](Images/Arquitetura.jpg)
+![Arquitetura Princiapal](../Images/Spark//Arquitetura.jpg)
 
 # **Como instalar ?**
 
@@ -60,7 +60,7 @@ Vamos seguir como exemplo esse dois arquivos que e onde baixaremos a imagem e ou
 
 # **Quais sao suas dependencias ?**
 
-![Dependencias](Images/Libs%20do%20spark.png)
+![Dependencias](../Images/Spark//Libs%20do%20spark.png)
 
 ## **Módulos Spark**
 

@@ -8,7 +8,7 @@ O Apache Airflow é uma plataforma de gerenciamento de fluxo de trabalho de cód
 
 O Airflow permite a execução de diferentes tipos de tarefas através de operadores de diferentes naturezas, como o PythonOperator, para execução de scripts Python, o DockerOperator, para trabalho com contêineres do Docker ou até mesmo o BashOperator, para a execução de comandos bash.
 
-![Diagrama](Images/Diagrama%20Airflow.jpg)
+![Diagrama](../Images/Airflow//Diagrama%20Airflow.jpg)
 
 # **Como funciona ?**
 
@@ -16,7 +16,7 @@ O objetivo do AIRFLOW é a orquestração de pipelines de tarefas agendadas por 
 
 # **Qual é a Arquitetura ?**
 
-![Arquitetura](Images/Arquitetura.png)
+![Arquitetura](../Images/Airflow//Arquitetura.png)
 
 # **Como instalar ?**
 
@@ -80,7 +80,7 @@ Define como as tarefas serão executadas, seja com kubernetes, Celery ou até me
 
 O processo/sub-processo onde as Tasks são executadas.
 
-![Tasks](Images/Tasks.png)
+![Tasks](../Images/Airflow//Tasks.png)
 
 # **Como usar ?**
 
