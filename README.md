@@ -473,3 +473,7 @@ Cloud Computing é uma abordagem que permite que os recursos de computação, ar
   - `Controle  total`: Uma solução local oferece às empresas controle totalsobre sua infraestrutura de dados, incluindo segurança, privacidade e conformidade.
   - `Latência de rede`: Em alguns casos, a latência de rede pode ser um problema para projetos de Engenharia de Dados em nuvem, especialmente para projetos que exigem grandes volumes de dados e latências baixas.
   - `Investimento inicial`: O uso de uma solução local de Engenharia de Dados pode exigir um grande investimento inicial em hardware, software e licenças, mas que pode ser usado por diversos anos em muitos diferentes projetos.
+
+## Segurança dos dados
+
+A implementar segurança e montar um ambiente de alta disponibilidade de dados de forma eficiente e profissional. Aprenderá a criar sistemas de segurança e controle de acesso, habilitando encriptação e ativando sistemas de auditoria, além de configurar alta disponibilidade no acesso aos dados em cluster, bem como, aprenderá como realizar testes de invasão e roubo de dados, objetivando identificar falhas e vulnerabilidades no ambiente de dados.
