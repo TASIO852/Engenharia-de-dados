@@ -12,3 +12,4 @@ mkdocs.yml
 *.tfstate
 *.tfstate.backup
 \key
+.infracost
